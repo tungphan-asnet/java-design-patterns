@@ -22,8 +22,11 @@
  */
 package com.iluwatar.monad;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
+/**
+ * Application Test
+ */
 public class AppTest {
 
   @Test

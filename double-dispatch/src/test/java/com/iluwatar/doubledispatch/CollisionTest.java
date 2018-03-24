@@ -24,11 +24,12 @@ package com.iluwatar.doubledispatch;
 
 import java.util.Objects;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /**
  * Date: 12/10/15 - 8:37 PM
- *
+ * Test for Collision
+ * @param <O> Type of GameObject
  * @author Jeroen Meulemeester
  */
 public abstract class CollisionTest<O extends GameObject> {
@@ -85,7 +86,7 @@ public abstract class CollisionTest<O extends GameObject> {
         ? "Expected [" + targetName + "] to be on fire after colliding with [" + otherName + "] but it was not!"
         : "Expected [" + targetName + "] not to be on fire after colliding with [" + otherName + "] but it was!";
 
-    assertEquals(errorMessage, expectTargetOnFire, target.isOnFire());
+    assertEquals(expectTargetOnFire, target.isOnFire(), errorMessage);
   }
 
   /**
@@ -104,7 +105,7 @@ public abstract class CollisionTest<O extends GameObject> {
         ? "Expected [" + targetName + "] to be damaged after colliding with [" + otherName + "] but it was not!"
         : "Expected [" + targetName + "] not to be damaged after colliding with [" + otherName + "] but it was!";
 
-    assertEquals(errorMessage, expectedDamage, target.isDamaged());
+    assertEquals(expectedDamage, target.isDamaged(), errorMessage);
   }
 
 }

@@ -22,22 +22,28 @@
  */
 package com.iluwatar.abstractfactory;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
-import org.junit.Before;
-import org.junit.Test;
+import com.iluwatar.abstractfactory.App.FactoryMaker;
+import com.iluwatar.abstractfactory.App.FactoryMaker.KingdomType;
 
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+/**
+ * Test for abstract factory
+ */
 public class AbstractFactoryTest {
 
   private App app = new App();
   private KingdomFactory elfFactory;
   private KingdomFactory orcFactory;
 
-  @Before
+  @BeforeEach
   public void setUp() {
-    elfFactory = new ElfKingdomFactory();
-    orcFactory = new OrcKingdomFactory();
+    elfFactory = FactoryMaker.makeFactory(KingdomType.ELF);
+    orcFactory = FactoryMaker.makeFactory(KingdomType.ORC);
   }
 
   @Test

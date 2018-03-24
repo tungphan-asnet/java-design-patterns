@@ -3,7 +3,6 @@ layout: pattern
 title: Queue based load leveling
 folder: queue-load-leveling
 permalink: /patterns/queue-load-leveling/
-pumlid: 
 categories: Other
 tags:
  - Java
@@ -24,6 +23,9 @@ for both the task and the service.
 
 * This pattern is ideally suited to any type of application that uses services that may be subject to overloading.
 * This pattern might not be suitable if the application expects a response from the service with minimal latency.
+
+## Tutorials
+* [Queue-Based Load Leveling Pattern](http://java-design-patterns.com/blog/queue-load-leveling/)
 
 ## Real world example
 

@@ -23,12 +23,15 @@
 
 package com.iluwatar.dao;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
+/**
+ * Tests {@link Customer}.
+ */
 public class CustomerTest {
 
   private Customer customer;
@@ -36,7 +39,7 @@ public class CustomerTest {
   private static final String FIRSTNAME = "Winston";
   private static final String LASTNAME = "Churchill";
 
-  @Before
+  @BeforeEach
   public void setUp() {
     customer = new Customer(ID, FIRSTNAME, LASTNAME);
   }

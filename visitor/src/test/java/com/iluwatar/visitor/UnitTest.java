@@ -22,7 +22,7 @@
  */
 package com.iluwatar.visitor;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 import java.util.function.Function;
@@ -34,7 +34,8 @@ import static org.mockito.Mockito.verifyNoMoreInteractions;
 
 /**
  * Date: 12/30/15 - 18:59 PM
- *
+ * Test related to Units
+ * @param <U> Type of Unit
  * @author Jeroen Meulemeester
  */
 public abstract class UnitTest<U extends Unit> {

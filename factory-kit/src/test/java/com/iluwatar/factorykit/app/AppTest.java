@@ -23,8 +23,11 @@
 package com.iluwatar.factorykit.app;
 
 import com.iluwatar.factorykit.App;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
+/**
+ * Application Test Entrypoint
+ */
 public class AppTest {
 
   @Test

@@ -3,7 +3,6 @@ layout: pattern
 title: Object Mother
 folder: object-mother
 permalink: /patterns/object-mother/
-pumlid: 
 categories: Creational
 tags:
  - Java

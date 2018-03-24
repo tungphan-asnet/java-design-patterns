@@ -22,9 +22,13 @@
  */
 package com.iluwatar.information.microservice;
 
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+/**
+ * Test for Information Rest Controller
+ */
 public class InformationControllerTest {
 
   @Test
@@ -33,7 +37,7 @@ public class InformationControllerTest {
 
     String title = infoController.getProductTitle();
 
-    Assert.assertEquals("The Product Title.", title);
+    assertEquals("The Product Title.", title);
   }
 
 }
